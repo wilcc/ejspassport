@@ -8,13 +8,16 @@
     </head>
 
     <body>
-        <%- include('../partial/header') %> 
+        <div class="container">
+            <h2>Random Users</h2>
+            <%- include('../partial/header') %> 
+        </div>
         <ul>
             <% result.forEach(person => { %>
-            
-            <img id src="<%= person.picture.large %> " alt="..." />
-            <li><%= person.name.first %>, <%= person.name.last %> </li>
+            <li><img id="img" src="<%= person.picture.large %> " alt="..." /><br>
+            <%= person.name.first %>, <%= person.name.last %> </li>
             <% }) %>
         </ul>
     </body>
+    <%- include('../partial/footer') %> 
 </html>

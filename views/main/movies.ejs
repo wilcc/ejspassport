@@ -4,11 +4,12 @@
         <title>Project For Code Immersives</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/movieStyle.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div id ='header'>
-            Now Playing
+            <h2>Here is a list of movie playing in theater</h2>
+            <%- include('../partial/header') %> 
         </div>
         <div id ='container'>
             <% result.forEach(movie => { %>
@@ -28,4 +29,5 @@
             <% }) %>
             </div>
     </body>
+    <%- include('../partial/footer') %> 
 </html>
